@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class 2</title>
+  </head>
+  <body>
+    <script>
+      var uservalueEng = Number(prompt("Enter your English value :"));
+      var uservalueMath = Number(prompt("Enter your Math value :"));
+      var uservaluePhy = Number(prompt("Enter your Physics value :"));
+      var uservalueChe = Number(prompt("Enter your Chemistry value :"));
+      var uservalueUrdu = Number(prompt("Enter your Urdu value :"));
+
+      if (
+        uservalueEng <= 100 &&
+        uservalueMath <= 100 &&
+        uservaluePhy <= 100 &&
+        uservalueChe <= 100 &&
+        uservalueUrdu <= 100
+      ) {
+        var totalObtainNumber =
+          uservalueChe +
+          uservalueEng +
+          uservalueMath +
+          uservaluePhy +
+          uservalueUrdu;
+        var result = (totalObtainNumber / 500)*100;
+        if (result <= 100 && result >= 90) {
+          alert("congratulations you got : A1" + result + "%");
+        } else if (result < 90 && result >= 80) {
+          alert("congratulations you got : A+" + result + "%");
+        } else if (result < 80 && result >= 70) {
+          alert("congratulations you got : A" + result + "%");
+        } else if (result < 70 && result >= 60) {
+          alert("congratulations you got : B" + result + "%");
+        } else {
+          alert("you got failed....");
+        }
+      } else {
+        alert("please insert actual number");
+      }
+    </script>
+  </body>
+</html>
